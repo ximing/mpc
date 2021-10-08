@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "compileOnSave": false,
+  "references": [
+    {
+      "path": "./packages/gbc-cli"
+    },
+    {
+      "path": "./packages/gbc-compiler"
+    },
+    {
+      "path": "./packages/gbc-demo"
+    },
+    {
+      "path": "./packages/gbc-mini"
+    },
+    {
+      "path": "./packages/gbc-mpbuild"
+    },
+    {
+      "path": "./packages/gbc-vm"
+    },
+    {
+      "path": "./packages/gbc-weapp"
+    }
+  ]
+}

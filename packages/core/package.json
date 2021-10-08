@@ -1,0 +1,32 @@
+{
+  "name": "@mp-tools/core",
+  "version": "0.0.1",
+  "description": "小程序核心",
+  "main": "./lib/index.js",
+  "keywords": [
+    "miniapp",
+    "mini-program",
+    "wechat"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remaxjs/remax/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remaxjs/remax.git"
+  },
+  "homepage": "https://remaxjs.org",
+  "scripts": {
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "test": "jest",
+    "test:debug": "npx --node-arg=--inspect-brk jest -i"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}
