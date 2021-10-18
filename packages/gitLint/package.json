@@ -25,7 +25,10 @@
     "test:debug": "npx --node-arg=--inspect-brk jest -i"
   },
   "dependencies": {
-    "simple-git": "^2.46.0"
+    "simple-git": "^2.46.0",
+    "typhonjs-escomplex": "^0.1.0",
+    "eslint": "^7.16.0",
+    "globby": "^11.0.0"
   },
   "devDependencies": {},
   "publishConfig": {

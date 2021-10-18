@@ -176,7 +176,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.15.4", "@babel/parser@^7.15.8", "@babel/parser@^7.4.3", "@babel/parser@^7.7.0":
+"@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.15.4", "@babel/parser@^7.15.8", "@babel/parser@^7.4.3", "@babel/parser@^7.7.0":
   version "7.15.8"
   resolved "http://r.npm.sankuai.com/@babel/parser/download/@babel/parser-7.15.8.tgz#7bacdcbe71bdc3ff936d510c15dcea7cf0b99016"
   integrity sha1-e6zcvnG9w/+TbVEMFdzqfPC5kBY=
@@ -1771,6 +1771,14 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
+"@typhonjs/babel-parser@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.npmmirror.com/@typhonjs/babel-parser/download/@typhonjs/babel-parser-0.2.0.tgz#30a9bdbb843dd645188fae6a816db2ba2dcb5305"
+  integrity sha1-MKm9u4Q91kUYj65qgW2yui3LUwU=
+  dependencies:
+    "@babel/parser" "^7.0.0"
+    babel-runtime "^6.0.0"
+
 "@zkochan/cmd-shim@^3.1.0":
   version "3.1.0"
   resolved "http://r.npm.sankuai.com/@zkochan/cmd-shim/download/@zkochan/cmd-shim-3.1.0.tgz#2ab8ed81f5bb5452a85f25758eb9b8681982fd2e"
@@ -2224,6 +2232,21 @@ babel-preset-jest@^24.9.0:
   dependencies:
     "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
     babel-plugin-jest-hoist "^24.9.0"
+
+babel-runtime@^6.0.0:
+  version "6.26.0"
+  resolved "https://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
+
+backbone-esnext-events@<1.0.0:
+  version "0.3.5"
+  resolved "https://registry.nlark.com/backbone-esnext-events/download/backbone-esnext-events-0.3.5.tgz#9a0a068ec7502bd3bd892b1797934780b0b7c5b9"
+  integrity sha1-mgoGjsdQK9O9iSsXl5NHgLC3xbk=
+  dependencies:
+    babel-runtime "^6.0.0"
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -2758,6 +2781,11 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
+commander@^2.0.0:
+  version "2.20.3"
+  resolved "https://registry.nlark.com/commander/download/commander-2.20.3.tgz?cache=0&sync_timestamp=1631257318022&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
+
 commander@^6.2.0:
   version "6.2.1"
   resolved "http://r.npm.sankuai.com/commander/download/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
@@ -3108,6 +3136,11 @@ core-js-pure@^3.16.0:
   version "3.18.2"
   resolved "http://r.npm.sankuai.com/core-js-pure/download/core-js-pure-3.18.2.tgz#d8cc11d4885ea919f3de776d45e720e4c769d406"
   integrity sha1-2MwR1IheqRnz3ndtRecg5Mdp1AY=
+
+core-js@^2.4.0:
+  version "2.6.12"
+  resolved "https://registry.npmmirror.com/core-js/download/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=
 
 core-js@^3.6.1:
   version "3.18.2"
@@ -3790,6 +3823,35 @@ escodegen@^1.9.1:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
+
+escomplex-plugin-metrics-module@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/escomplex-plugin-metrics-module/download/escomplex-plugin-metrics-module-0.1.0.tgz#7dec0130bd481be13f9c4655b541516495eac1f2"
+  integrity sha1-fewBML1IG+E/nEZVtUFRZJXqwfI=
+  dependencies:
+    typhonjs-escomplex-commons "^0.1.0"
+
+escomplex-plugin-metrics-project@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/escomplex-plugin-metrics-project/download/escomplex-plugin-metrics-project-0.1.0.tgz#9d5a72207073d2d8cddc4924519dac15f1a110ea"
+  integrity sha1-nVpyIHBz0tjN3EkkUZ2sFfGhEOo=
+  dependencies:
+    typhonjs-escomplex-commons "^0.1.0"
+
+escomplex-plugin-syntax-babylon@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/escomplex-plugin-syntax-babylon/download/escomplex-plugin-syntax-babylon-0.1.0.tgz#7c8d304d74010bcd6f6aeb9d010f916bc7230655"
+  integrity sha1-fI0wTXQBC81vauudAQ+Ra8cjBlU=
+  dependencies:
+    escomplex-plugin-syntax-estree "^0.1.0"
+    typhonjs-escomplex-commons "^0.1.0"
+
+escomplex-plugin-syntax-estree@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/escomplex-plugin-syntax-estree/download/escomplex-plugin-syntax-estree-0.1.0.tgz#b5adf0ccd5f3bacbe60d2720b7c4cbf509259809"
+  integrity sha1-ta3wzNXzusvmDScgt8TL9QklmAk=
+  dependencies:
+    typhonjs-escomplex-commons "^0.1.0"
 
 eslint-config-airbnb-base@^14.2.1:
   version "14.2.1"
@@ -4709,7 +4771,7 @@ globals@^13.6.0, globals@^13.9.0:
   dependencies:
     type-fest "^0.20.2"
 
-globby@^11.0.3:
+globby@^11.0.0, globby@^11.0.3:
   version "11.0.4"
   resolved "http://r.npm.sankuai.com/globby/download/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
   integrity sha1-LLr/d8Lypi5x6bKBOme5ejowAaU=
@@ -8286,6 +8348,11 @@ regenerate@^1.4.2:
   resolved "http://r.npm.sankuai.com/regenerate/download/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha1-uTRtiCfo9aMve6KWN9OYtpAUhIo=
 
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.nlark.com/regenerator-runtime/download/regenerator-runtime-0.11.1.tgz?cache=0&sync_timestamp=1626992969133&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fregenerator-runtime%2Fdownload%2Fregenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+  integrity sha1-vgWtf5v30i4Fb5cmzuUBf78Z4uk=
+
 regenerator-runtime@^0.13.4:
   version "0.13.9"
   resolved "http://r.npm.sankuai.com/regenerator-runtime/download/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
@@ -9742,6 +9809,63 @@ typescript@^3.9.10:
   version "3.9.10"
   resolved "http://r.npm.sankuai.com/typescript/download/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
   integrity sha1-cPORCselHta+952ngAaQsZv3eLg=
+
+typhonjs-ast-walker@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.nlark.com/typhonjs-ast-walker/download/typhonjs-ast-walker-0.2.1.tgz#6beb8db8cc45b5bc438c8c95853f8d385413cb3e"
+  integrity sha1-a+uNuMxFtbxDjIyVhT+NOFQTyz4=
+
+typhonjs-escomplex-commons@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.nlark.com/typhonjs-escomplex-commons/download/typhonjs-escomplex-commons-0.1.1.tgz#223ed421787b92c27ec0e81945b5de35f1507c41"
+  integrity sha1-Ij7UIXh7ksJ+wOgZRbXeNfFQfEE=
+
+typhonjs-escomplex-module@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/typhonjs-escomplex-module/download/typhonjs-escomplex-module-0.1.0.tgz#04d6719b9a176015b499270f747c56e37b99b1c1"
+  integrity sha1-BNZxm5oXYBW0mScPdHxW43uZscE=
+  dependencies:
+    escomplex-plugin-metrics-module "^0.1.0"
+    escomplex-plugin-syntax-babylon "^0.1.0"
+    typhonjs-ast-walker "^0.2.0"
+    typhonjs-escomplex-commons "^0.1.0"
+    typhonjs-plugin-manager "^0.2.0"
+
+typhonjs-escomplex-project@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/typhonjs-escomplex-project/download/typhonjs-escomplex-project-0.1.0.tgz#ac3fecc6c65b1d1a4f435fab4edd6a659efc319f"
+  integrity sha1-rD/sxsZbHRpPQ1+rTt1qZZ78MZ8=
+  dependencies:
+    escomplex-plugin-metrics-project "^0.1.0"
+    typhonjs-escomplex-commons "^0.1.0"
+    typhonjs-escomplex-module "^0.1.0"
+    typhonjs-plugin-manager "^0.2.0"
+
+typhonjs-escomplex@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.nlark.com/typhonjs-escomplex/download/typhonjs-escomplex-0.1.0.tgz#4e21101955ef91c993b617af41eb02c1123a1d75"
+  integrity sha1-TiEQGVXvkcmTthevQesCwRI6HXU=
+  dependencies:
+    "@typhonjs/babel-parser" "^0.2.0"
+    commander "^2.0.0"
+    typhonjs-escomplex-module "^0.1.0"
+    typhonjs-escomplex-project "^0.1.0"
+
+typhonjs-object-util@^0.4.0:
+  version "0.4.2"
+  resolved "https://registry.nlark.com/typhonjs-object-util/download/typhonjs-object-util-0.4.2.tgz#1c9c2a709e0478345d809879562731c309e1a554"
+  integrity sha1-HJwqcJ4EeDRdgJh5VicxwwnhpVQ=
+  dependencies:
+    babel-runtime "^6.0.0"
+
+typhonjs-plugin-manager@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.nlark.com/typhonjs-plugin-manager/download/typhonjs-plugin-manager-0.2.0.tgz#260c4acdf6abbe94fd35ca0a25251839ad9e14d3"
+  integrity sha1-JgxKzfarvpT9NcoKJSUYOa2eFNM=
+  dependencies:
+    babel-runtime "^6.0.0"
+    backbone-esnext-events "<1.0.0"
+    typhonjs-object-util "^0.4.0"
 
 uglify-js@^3.1.4:
   version "3.14.2"
