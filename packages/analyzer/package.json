@@ -1,7 +1,7 @@
 {
-  "name": "@mp-tools/git-lint",
+  "name": "@mp-tools/analyzer",
   "version": "0.0.1",
-  "description": "小程序核心",
+  "description": "小程序分析工具",
   "main": "./lib/index.js",
   "keywords": [
     "miniapp",
@@ -25,11 +25,7 @@
     "test:debug": "npx --node-arg=--inspect-brk jest -i"
   },
   "dependencies": {
-    "simple-git": "^2.46.0",
-    "typhonjs-escomplex": "^0.1.0",
-    "eslint": "^7.16.0",
-    "globby": "^11.0.0",
-    "require-from-string": "^2.0.2"
+    "got": "^11.8.2"
   },
   "devDependencies": {},
   "publishConfig": {

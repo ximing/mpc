@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小程序分析</title>
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g6/4.3.11/dist/g6.min.js"></script>
+    <style>
+      .g6-minimap-container {
+        border: 1px solid #e2e2e2;
+      }
+      .g6-minimap-viewport {
+        border: 2px solid rgb(25, 128, 255);
+      }
+      .g6-minimap{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #FFF;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mountNode"></div>
+    <script>
+      const data = $data$;
+      const grid = new G6.Grid();
+      const minimap = new G6.Minimap({
+        size: [250, 200],
+      });
+      const graph = new G6.Graph({
+        container: 'mountNode',
+        width: window.innerWidth,
+        height: window.innerHeight,
+        fitView: true,
+        fitViewPadding: 30,
+        animate: true,
+        groupByTypes: false,
+        plugins: [grid, minimap], // 配置 Grid 插件和 Minimap 插件
+        modes: {
+          default: [
+            // 'drag-combo',
+            'drag-canvas',
+            'zoom-canvas',
+            'scroll-canvas',
+            'activate-relations',
+            {
+              type: 'collapse-expand-combo',
+              relayout: false,
+            },
+          ],
+        },
+        layout: {
+          rankdir: 'LR',
+          type: 'dagre',
+          sortByCombo: true,
+          ranksep: 10,
+          nodesep: 10,
+        },
+        defaultNode: {
+          size: [60, 30],
+          type: 'rect',
+          anchorPoints: [
+            [0.5, 0],
+            [0.5, 1],
+          ],
+        },
+        defaultEdge: {
+          type: 'line',
+          style: {
+            stroke: '#F6903D',
+            lineWidth: 2,
+            opacity: 0.3,
+            endArrow: true,
+          },
+        },
+        defaultCombo: {
+          type: 'rect',
+          style: {
+            fillOpacity: 0.1,
+          },
+        },
+      });
+      graph.data(data);
+      graph.render();
+    </script>
+  </body>
+</html>
